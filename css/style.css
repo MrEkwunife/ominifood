@@ -498,3 +498,29 @@
   font-size: 1.8rem;
   text-align: center;
 }
+
+/* ****************** */
+/* FEATURE SECTION */
+/* ****************** */
+
+.feature-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #fae5d3;
+  padding: 1.2rem;
+  border-radius: 50%;
+  color: #e67e22;
+  margin-bottom: 3.2rem;
+}
+
+.feature-header {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-txt {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #767676;
+}
