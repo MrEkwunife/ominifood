@@ -392,39 +392,109 @@
 }
 
 /*---------------------*/
-/*   PRICING SECTION   */
+/* PRICE PLANS SECTION */
 /*---------------------*/
 
-.price-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+.price-plans-container {
+  padding: 9.6rem 0;
 }
 
-.price-name {
-  font-size: 2rem;
-  color: #eb984e;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 2.4rem;
+.price-plans {
+  background-color: #fff;
 }
 
-.price {
-  font-size: 6.2rem;
+.price-plan {
+  /* border: 2px solid black; */
+  width: 75%;
+  padding: 4.8rem;
+  border-radius: 11px;
+}
+
+.plan--starter {
+  justify-self: end;
+  border: 2px solid #fae5d3;
+}
+
+.plan--complete {
+  background-color: #fae5d3;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan--complete::after {
+  content: "Best Value";
+  position: absolute;
+  top: 10%;
+  right: -15%;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 1.2rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
   text-align: center;
 }
 
-.price span {
-  display: inline-block;
-  font-size: 3rem;
-  margin-right: 2px;
-}
-
-.price-des {
-  color: #999;
-  text-align: center;
+.plan-name {
+  /* 20 / 24 / 30 / 36 */
+  font-size: 2rem;
+  font-weight: 600;
+  color: #e67e22;
+  text-transform: uppercase;
+  /* / 12 / 16 / 24 / 32 */
   margin-bottom: 2.4rem;
+}
+
+.plan-price {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.plan-per-month {
+  font-size: 1.6em;
+  color: #6f6f6f;
+  margin-bottom: 5.2rem;
+}
+
+.attrs {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  gap: 1.6rem;
+  margin-bottom: 5.2rem;
+}
+
+.attr {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.attr ion-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.plan-btn-box {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.plan-btn {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+}
+
+.plan-details {
+  font-size: 1.8rem;
+  text-align: center;
 }
